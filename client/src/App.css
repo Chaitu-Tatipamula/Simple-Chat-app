@@ -1,0 +1,127 @@
+.App{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 100vh;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.login{
+  height: 400px;
+  width: 600px;
+  border: 4px solid #066677;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login input{
+  margin: 10px;
+  width: 150px;
+  height: 35px;
+  border: 2px solid #066677;
+  background-color: transparent;
+  color: white;
+}
+.login input:focus{
+  outline: none;
+}
+
+.login button{
+  margin-top: 30px;
+  width: 150px;
+  color: white;
+  padding: 20px;
+  background-color: #066677;
+}
+
+.login button:hover{
+  cursor: pointer ;
+  background-color: #055766;
+}
+
+.chatContainer{
+  height: 400px;
+  width: 700px;
+  border: 4px solid #066677;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatContainer .messages{
+  flex: 80%;
+  width: 100%;
+  color: white;
+
+}
+.chatContainer .messageInputs{
+  flex: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.chatContainer .messageInputs input{
+  flex: 80%;
+  border-top: 4px solid #066677;
+  font-size: 20px;
+  padding-left: 20px;
+}
+.chatContainer .messageInputs button{
+  flex: 20%;
+  height: 100%;
+  background-color: #066677;
+  color: white;
+  border: none;
+}
+
+.message{
+  width: fit-content;
+  padding: 20px 30px 20px 30px;
+  border-radius: 10px;
+  height: auto;
+  background-color: #066677;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 20px;
+}
+
+.messageBubble{
+  display: flex;
+  /* flex-direction: row; */
+  
+}
+
+.message-container{
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.time{
+  font-size: 12px;
+  text-align: center;
+}
+
+
+#You{
+  justify-content: start;
+}
+
+#Other{
+  justify-content: end;
+  margin-right: 15px;
+}
+
+#Other .message{
+  background-color: #21cf21;
+  color: white;
+}
